@@ -15,7 +15,10 @@
 		function registrationComplete(){
 			 window.dataLayer = window.dataLayer || [];
 			 window.dataLayer.push({
-			 'event': 'registrationComplete'
+			 	'event': 'registrationComplete',
+			 	'gaEventCategory': 'activate',
+		        'gaEventAction': 'free_sensor',
+		        'gaEventLabel': 'Door Sensor'
 			 });
 		}
 	</script>

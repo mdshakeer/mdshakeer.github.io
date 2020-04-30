@@ -11,12 +11,21 @@
 	})(window,document,'script','dataLayer','GTM-5XR8LQK');</script>
 	<!-- End Google Tag Manager -->
 
+	<script>
+		function registrationComplete(){
+			 window.dataLayer = window.dataLayer || [];
+			 window.dataLayer.push({
+			 'event': 'registrationComplete'
+			 });
+		}
+	</script>
+
 </head>
 <body>
 	<form name="">
 		<input type="text" name="user" />
 		<input type="text" name="password" />
-		<button>Submit</button>
+		<button onclick="registrationComplete();">Submit</button>
 	</form>
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XR8LQK"
